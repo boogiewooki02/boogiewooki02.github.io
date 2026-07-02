@@ -47,7 +47,6 @@ function GroupeatDetail({ project }: { project: Project }) {
             <article><p className="case-label">VALIDATION</p><h3>클라이언트 값을 그대로 신뢰하지 않기</h3><p>로그인 사용자와 결제 소유자, 요청 금액과 서버 저장 금액을 먼저 비교합니다. 토스 응답도 <code>DONE</code> 상태인지, 주문번호와 최종 금액이 일치하는지 다시 검증합니다.</p></article>
             <article><p className="case-label">IDEMPOTENCY</p><h3>중복 승인 요청을 구분해서 처리</h3><p>이미 완료된 결제에 같은 <code>paymentKey</code>가 들어오면 저장된 응답을 반환하고, 다른 키라면 비정상 요청으로 거절합니다. 결제 준비 단계에서는 상태를 <code>IN_PROGRESS</code>로 전환합니다.</p></article>
           </div>
-          <aside className="tradeoff"><span>KNOWN TRADE-OFF</span><p>외부 승인 성공 직후 내부 저장이 실패하는 구간은 로컬 트랜잭션만으로 원자성을 보장할 수 없습니다. 현재 코드는 실패 상태를 기록하지만, 타임아웃 후 결제 재조회와 승인 성공 후 검증 실패 시 자동 취소 정책은 후속 보완 과제로 명시했습니다.</p></aside>
         </section>
 
         <section className="case-chapter" id="auth-flow">
