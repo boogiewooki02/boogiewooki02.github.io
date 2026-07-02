@@ -21,7 +21,7 @@
 .collab-list article div>p:nth-of-type(2){max-width:760px;color:#bbc1b7;font-size:16px;line-height:1.8;word-break:keep-all}.collab-list code{font-size:12px}
 .manifesto>p:last-child{max-width:580px;color:#bbc1b7;font-size:17px;line-height:1.8;word-break:keep-all}
 .skills span{font-size:12px}.skills h3{font-size:13px}.skills p{color:#b7bdb3;font-size:14px;line-height:1.9}
-.history time{font-size:11px}.history strong{font-size:15px}.history span{color:#aab1a7;font-size:12px}
+.history time{font-size:11px}.history strong{max-width:230px;font-size:15px;line-height:1.55;word-break:keep-all}.history span{color:#aab1a7;font-size:12px}
 .focus-block ol{list-style:none;padding:18px 20px;margin:0;display:grid;gap:0;counter-reset:focus}.focus-block li{display:grid;grid-template-columns:38px 1fr;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);font:14px/1.6 var(--mono);color:#c5cbc1}.focus-block li:last-child{border-bottom:0}.focus-block li span{color:var(--green);font-size:11px}
 .github-link{display:inline-flex;align-items:center;gap:7px}.github-icon{width:17px;height:17px;flex:0 0 auto}.project-heading{min-width:0}.project-title-row{display:flex;align-items:center;justify-content:space-between;gap:30px}.project-title-row .repo-links{flex:0 0 auto;display:flex;gap:18px}.project-title-row .github-link{color:#b8beb5;font:11px var(--mono);white-space:nowrap}.project-title-row .github-link:hover{color:var(--green)}.collab-github{display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--green)}.collab-github small{font:9px var(--mono);color:var(--muted)}.collab-github:hover small{color:var(--green)}.detail-end .github-link{padding:10px 13px;border:1px solid currentColor}
 
