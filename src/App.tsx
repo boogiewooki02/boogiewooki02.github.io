@@ -87,7 +87,7 @@ export default function App() {
 
         <section className="section about" id="about">
           <div className="section-title"><p><span>$</span> cat about.txt</p><h2>How I build</h2><span>read-only</span></div>
-          <div className="about-grid"><div className="manifesto"><p>서버 바깥의 맥락까지<br /><strong>연결해서 봅니다.</strong></p><p>도메인 상태와 데이터 정합성, 인증의 수명주기, 배포 이후의 운영까지 고려하며 구현합니다.</p></div><div className="skills"><div><span>01</span><h3>BACKEND</h3><p>Java · Spring Boot · Security · JPA<br />Python · FastAPI</p></div><div><span>02</span><h3>DATA / INFRA</h3><p>MySQL · PostgreSQL · Docker<br />AWS · Nginx · GitHub Actions</p></div><div><span>03</span><h3>FOUNDATION</h3><p>REST API · OAuth 2.0 · JWT<br />Transaction · CI/CD · Git</p></div></div></div>
+          <div className="about-grid"><div className="manifesto"><p>서버 바깥의 맥락까지<br /><strong>연결해서 봅니다.</strong></p><p>도메인 상태와 데이터 정합성, 인증의 수명주기, 배포 이후의 운영까지 고려하며 구현합니다.</p></div><div className="skills"><div><span>01</span><h3>BACKEND</h3><p>Java · Spring Boot · Security · JPA<br />Python · FastAPI</p></div><div><span>02</span><h3>DATA / INFRA</h3><p>MySQL · PostgreSQL · Qdrant · Docker<br />AWS · Nginx · GitHub Actions</p></div><div><span>03</span><h3>FOUNDATION</h3><p>REST API · OAuth 2.0 · JWT<br />CI/CD · Git</p></div></div></div>
           <div className="history"><div><time>2022.03 —</time><strong>홍익대학교</strong><span>컴퓨터공학과</span></div><div><time>2025.03 — 09</time><strong>SK Networks AI Camp</strong><span>13기 수료</span></div><div><time>2025.07 —</time><strong>ToBig’s 인공지능·데이터분석 연합동아리</strong><span>24기</span></div><div><time>2026.03 —</time><strong>신촌 연합 IT 창업동아리 CEOS</strong><span>23기 BE</span></div></div>
         </section>
       </main>

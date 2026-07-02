@@ -57,7 +57,7 @@ function GroupeatDetail({ project }: { project: Project }) {
             <div className="auth-branches"><div><strong>ACTIVE</strong><p>Access·Refresh Token 발급 후 사용자 유형별 화면으로 이동</p></div><div><strong>SIGNUP_IN_PROGRESS</strong><p>고객·사업자 유형에 맞는 다음 가입 단계로 복귀</p></div><div><strong>NEW USER</strong><p>소셜 정보를 담은 단기 Signup Token으로 가입 시작</p></div></div>
           </div>
           <div className="decision-grid">
-            <article><p className="case-label">FLOW DESIGN</p><h3>소셜 로그인과 서비스 가입을 분리</h3><p>OAuth 인증 성공을 곧바로 회원가입 완료로 간주하지 않았습니다. 공통 단계에서 휴대폰 인증과 필수 약관을 검증한 뒤, 고객 프로필 또는 사업자 프로필 단계로 나눠 가입을 완성합니다.</p></article>
+            <article><p className="case-label">FLOW DESIGN</p><h3>소셜 로그인과 서비스 가입을 분리</h3><p>OAuth 인증 성공을 곧바로 회원가입 완료로 간주하지 않았습니다. 공통 단계에서 휴대폰 인증과 필수 약관을 검증한 뒤 고객 또는 사업자 프로필을 입력하도록 구성했습니다. 가입 도중 이탈한 사용자는 <code>SIGNUP_IN_PROGRESS</code> 상태로 유지하고, 다시 로그인하면 회원 유형에 맞는 다음 가입 단계로 복귀시킵니다.</p></article>
             <article><p className="case-label">SECURITY</p><h3>용도가 다른 토큰을 분리</h3><p>가입 전에는 소셜 식별 정보를 담은 Signup Token을 사용하고, 활성 회원에게만 Access·Refresh Token을 발급합니다. 인증 토큰은 <code>HttpOnly</code> 쿠키로 전달하며 운영 환경에 맞춰 Secure·SameSite·Domain을 설정할 수 있게 구성했습니다.</p></article>
           </div>
         </section>
